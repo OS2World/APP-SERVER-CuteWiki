@@ -1,0 +1,40 @@
+/*
+ * cwhtml_ie.css - Special hacks for the bugs of IE
+ *
+ * Copyright 2005 Martin Doering
+ *
+ * This file is distributed under the GPL, version 2 or at your
+ * option any later version.  See doc/license.txt for details.
+ */
+
+
+
+/* changes the look of the scrollbar + textareas */
+body {
+    scrollbar-base-color: #DEE7EC;
+    scrollbar-highlight-color: #DEE7EC;
+    scrollbar-track-color: #F7F9FA;
+    scrollbar-darkshadow-color: #F7F9FA;
+    scrollbar-3dlight-color: #8CACBB;
+    scrollbar-shadow-color: #8CACBB;
+    scrollbar-arrow-color: #436976;
+}
+
+/* because IE does not support position:fixed */
+div.text {
+    height: 92%;
+    overflow-y: auto;
+    margin-top: 0em;
+}
+
+/* try to fix the buggy scrollbar of IE */
+textarea {
+    margin-right: 4em;
+    right: 0px;
+}
+
+/* fix positioning for save and reset buttons, like done for div.text */
+.right{
+    margin-right: 2em;
+    right: 0px;
+}

@@ -1,0 +1,395 @@
+/*
+ * cwhtml.css - Default Style sheet for CuteWiki HTML output
+ *
+ * Copyright 2005 Martin Doering
+ *
+ * This file is distributed under the GPL, version 2 or at your
+ * option any later version.  See doc/license.txt for details.
+ */
+
+body {
+    font: 12px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    background: White;
+    color: #38393b;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+
+    /* These work in IE only, changes the look of the scrollbar + textareas */
+    scrollbar-base-color: #DEE7EC;
+    scrollbar-highlight-color: #DEE7EC;
+    scrollbar-track-color: #F7F9FA;
+    scrollbar-darkshadow-color: #F7F9FA;
+    scrollbar-3dlight-color: #8CACBB;
+    scrollbar-shadow-color: #8CACBB;
+    scrollbar-arrow-color: #436976;
+}
+
+/***************************************************************************/
+
+div.bar {
+    font: 16px Verdana, Gulim, Helvetica, Arial, sans-serif; 
+    font-weight: bold;
+    background-color: #d0d4e0;
+    display: block;
+    position: fixed;
+    width:100%;
+    top: 0mm;
+
+    padding-left:   8px;
+    padding-right:  8px;
+    padding-top:    0px;
+    padding-bottom: 1px;
+}
+
+input.bar {
+    font: 10px Verdana, Gulim, Helvetica, Arial, sans-serif; 
+    background: White url(linkTransparent.gif) 9px 1px no-repeat;
+    color: Black;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 0px 0px 1px 15px;
+}
+
+/***************************************************************************/
+
+div.text {
+    padding-left:   2em;
+    padding-right:  2em;
+    margin-top: 3em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+div.header {
+    font-weight: bold;
+    background: #DEE7EC;
+    margin-bottom: 0em;
+    border-bottom: 1px solid #8CACBB;
+    color: #436976;
+    font-size: 180%;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+span.topic {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 60%;
+}
+
+/***************************************************************************/
+
+div.middle {
+    vertical-align: top;
+    padding: 1em 0em 1em 0em;
+}
+
+a {
+    color: #436976;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.footnote {
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: normal;
+}
+
+a.gotopage {
+    background-color: transparent;
+    font-weight: bolder;
+}
+
+a.createpage {
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: bolder;
+    color: #999900;
+    cursor: help;
+}
+
+a:hover {
+    color: #ff9900;
+    background-color: transparent;
+}
+
+/* Default paragraph style*/
+p {
+    font: 12px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
+
+p a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+p a:visited {
+    background-color: transparent;
+}
+
+p a:active {
+    color: Red;
+    background-color: transparent;
+}
+
+p img {
+    border: 0;
+    margin: 0;
+}
+
+hr {
+    size: 1px;
+    noshade: noshade;
+    height: 1px;
+    color: #8CACBB;
+    background-color: transparent;
+}
+
+/* Style for the headlines */
+h1, h2, h3 {
+    font-weight: bold;
+    color: #436976;
+    margin-top: 1em;
+}
+
+h1 {
+    font-size: 140%;
+    border-bottom: 1px solid #8CACBB;
+}
+
+h2 {
+    font-size: 120%;
+}
+
+h3 {
+    font-size: 100%;
+}
+
+ul { 
+    list-style-type: square;
+    margin-left: 2em;
+    line-height: 1.5em;
+    padding:0;
+}
+
+ul.level0 { 
+    list-style-type: square;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    line-height: 1.5em;
+    padding:0;
+}
+
+ol { 
+    list-style-type: decimal;
+    line-height: 1.5em;
+}
+
+ol.level0 { 
+    margin-top: 1em;
+    margin-bottom: 1em;
+    list-style-type: decimal;
+    line-height: 1.5em;
+}
+
+li {
+    font-weight: bold;
+    color: #436976;
+}
+
+span.list_item {
+    font-weight: normal;
+    color: black;
+}
+
+span.list_desc {
+    right: 0;
+    text-align: right;
+}
+
+form {
+    border: none;
+}
+
+textarea {
+    border: 1px solid #8cacbb;  
+    width: 100%;
+    height: 50%;
+    color: #38393b;
+    background-color: white;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+
+    padding-left:   2px;
+}
+
+
+
+/* Small cosmetic fix which makes input gadgets look nicer. */
+input {
+    font: 12px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    border: 1px solid #8cacbb;  
+    color: #38393b;
+    background-color: white;
+    margin-bottom: 1px; /* IE bug fix */
+    vertical-align: middle;
+    padding: 0px 0px 2px 2px;
+}
+
+select {
+    font: 12px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    border: 1px solid #8cacbb;  
+    color: #38393b;
+    background-color: white;
+    margin-bottom: 1px; /* IE bug fix */
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+pre {
+    font-family: Courier;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 3px;
+    border: 1px solid black;
+    color: Black;
+    background-color: #FFFFE1;
+    overflow: hidden;
+}
+
+input.content {
+    font-weight: normal;
+    background: White url(linkTransparent.gif) 9px 1px no-repeat;
+    color: Black;
+    cursor: pointer;
+    padding: 0px 0px 1px 15px;
+}
+
+table {
+    font: 12px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    text-align: left;
+    padding: 1em;
+    border: 1px solid #8cacbb;
+    color: #38393b;
+    background-color: white;
+    border-collapse: collapse;
+    margin: 1em 0em 1em 0em;
+}
+
+tr {
+    vertical-align: top;
+    background: transparent;
+}
+
+th {
+    background: #DEE7EC;
+    color: Black;
+    font-weight: bold;
+    white-space: nowrap;
+    border: 1px solid #8CACBB;
+    padding: 0em 0.5em 0em 0.5em;
+}
+
+td {
+    background: #DEE7EC;
+    color: Black;
+    background-color: white;
+    border: 1px solid #8cacbb;
+    padding: 0em 0.5em 0em 0.5em;
+    line-height: 125%;
+}
+
+td.number {
+    text-align: right;
+    color: blue;
+    background: #DEE7EC;
+    background-color: white;
+    border: 1px solid #8cacbb;
+    padding: 0em 0.5em 0em 0.5em;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+table img {
+	vertical-align: middle;
+}
+
+/***************************************************************************/
+
+div.footnotes {
+    font: 10px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    background: #eeeeee;
+    margin: 0;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+/***************************************************************************/
+
+div.footer {
+    background: #DEE7EC;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border-top: 1px solid #8CACBB;
+    bottom: 0;
+}
+
+.left {
+      position: absolute;
+      width:200px;
+}
+      
+.right {
+      position: absolute;
+      right: 2em;
+}
+      
+.mitte {
+      position:absolute;
+      width:100%;
+      padding-left:210px;
+      padding-right:160px;
+}
+
+
+
+/***************************************************************************/
+/* This is all for the displaying od the diffs when looking into history   */
+/***************************************************************************/
+
+div.diff {
+    font-family: Courier;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 1px solid black;
+    color: Black;
+    background-color: #FFFFE1;
+}
+
+div.head {
+    background: lightblue;
+}
+
+div.old {
+    background: #ffaaaa;
+}
+
+div.new {
+    background: #aaffaa;
+}
+

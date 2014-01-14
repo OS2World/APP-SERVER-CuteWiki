@@ -1,0 +1,66 @@
+This is a port of CuteWiki - a small standalone Wiki engine by
+Martin Doering -
+
+See:  http://datenbrei.de/de/?Programmierung/CuteWiki
+
+
+Also included is a quick-and-dirty port of RCS 5.7 to InnoTek
+LIBC in order to support wiki file versioning.
+
+
+
+=== Installation
+
+Just unpack the archive to a suitable directory. Modify "mywiki.ini"
+to match your directory choice. 
+
+!!! Attention: Use forward slashes in path names !!!
+
+
+After doing that, run:
+
+cutewiki mywiki
+
+
+Then use a web browser to contact your Wiki server. Log in as
+user "WikiAdmin", password "wikiwiki". Note that user names
+and passwords are case sensitive !
+
+
+
+=== Environment variables
+
+HOME=d:/mypath/home
+
+If $(HOME) is defined, CuteWiki will search ini-files in the directory:
+
+$(HOME)/.ini/
+
+
+RCS_USER=Ruediger
+
+If $(RCS_USER) is defined as above, RCS will use "Ruediger" as user 
+name for checking in/out files. Otherwise it will default to "unknown".
+
+
+!!! Attention: This version of RCS is not able to determine the current
+network user name !!!
+
+
+
+
+=== System requirements
+
+This port needs the InnoTek LIBC061 runtime as well as a 32bit TCP/IP
+stack.
+
+
+
+
+=== Acknowledgments
+
+This is free software. It comes with absolutely no warranty. Nor the
+original author or the porter may be held liable for any damage, loss
+of data or other problems arising out of the use of this software.
+
+

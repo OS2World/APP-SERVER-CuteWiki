@@ -1,0 +1,368 @@
+/*
+ * cutewiky.css - Default Style sheet for cutewiky
+ *
+ * Copyright 2002 Martin Doering
+ *
+ * This file is distributed under the GPL, version 2 or at your
+ * option any later version.  See doc/license.txt for details.
+ */
+
+body {
+    font: 12px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    background: White;
+    color: #38393b;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    /* These work in IE only, changes the look of the scrollbar + textareas */
+    scrollbar-base-color: #DEE7EC;
+    scrollbar-highlight-color: #DEE7EC;
+    scrollbar-track-color: #F7F9FA;
+    scrollbar-darkshadow-color: #F7F9FA;
+    scrollbar-3dlight-color: #8CACBB;
+    scrollbar-shadow-color: #8CACBB;
+    scrollbar-arrow-color: #436976;
+}
+
+/***************************************************************************/
+
+div.bar {
+    font: 16px Verdana, Gulim, Helvetica, Arial, sans-serif; 
+    font-weight: bold;
+    background-color: #c6c3c6;
+    display: block;
+    vertical-align: top;
+/*
+    position: fixed;
+    z-index: 2;
+*/
+
+    padding-left:   0.5em;
+    padding-right:  0.5em;
+    padding-top:    0em;
+    padding-bottom: 0.2em;
+}
+
+input.bar {
+    font: 10px Verdana, Gulim, Helvetica, Arial, sans-serif; 
+    background: White url(linkTransparent.gif) 9px 1px no-repeat;
+    color: Black;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 0px 0px 1px 15px;
+}
+
+/***************************************************************************/
+
+div.all {
+    overflow: auto;
+    vertical-align: top;
+    top: 10mm;
+    left: 0;
+    right:0;
+    bottom: 10mm;
+/*
+    width: 97%;*/
+    height: 94%;
+/*
+    z-index:1;
+*/    
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+div.header {
+    vertical-align: top;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+/***************************************************************************/
+
+div.middle {
+    vertical-align: top;
+    padding: 1em 0em 1em 0em;
+}
+
+a {
+    color: #436976;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.footnotelink {
+/*    text-decoration: underline;*/
+/*    font: 9px Verdana, Gulim, Helvetica, Arial, sans-serif; */
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: normal;
+}
+
+a.gotopage {
+/*    text-decoration: underline;*/
+    background-color: transparent;
+    font-weight: bolder;
+}
+
+a.createpage {
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: bolder;
+    color: #999900;
+}
+
+/*
+a:visited {
+    color: Purple; 
+    background-color: transparent;
+}
+*/
+
+a:hover {
+    color: #ff9900;
+    background-color: transparent;
+}
+
+/* Default paragraph style*/
+p {
+    font: 12px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+/*    text-indent: 1cm;*/
+}
+
+p a {
+/*    text-decoration: underline;*/
+    text-decoration: none;
+    background-color: transparent;
+}
+
+p a:visited {
+/* 	color: Purple; */
+    background-color: transparent;
+}
+
+p a:active {
+    color: Red;
+    background-color: transparent;
+}
+
+p img {
+    border: 0;
+    margin: 0;
+}
+
+hr {
+    height: 1px;
+    color: #8CACBB;
+    background-color: transparent;
+}
+
+/* Style for the headlines */
+h1, h2, h3, h4, h5, h6 {	
+    font: bold 12px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    color: #436976;
+    border-bottom: 1px solid #8CACBB;
+}
+
+h1 {
+    background: #DEE7EC;
+    font-size: 180%;
+    margin-bottom: 0em;
+}
+
+h2 {
+    font-size: 140%;
+    margin-top: 1em;
+}
+
+h3 {
+    font-size: 120%;
+    margin-top: 1em;
+}
+
+h4 {
+    font-size: 100%;
+    margin-top: 1em;
+}
+
+h5 {
+    font-size: 100%;
+    margin-top: 1em;
+}
+
+h6 {
+    font-size: 100%;
+    margin-top: 1em;
+}
+
+ul { 
+    list-style-image: url("bullet.gif"); 
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    line-height: 1.5em;
+    padding:0;
+}
+
+ol { 
+    list-style-image: none; 
+    list-style-type:decimal
+    line-height: 1.5em;
+}
+
+form {
+    border: none;
+}
+
+textarea {
+/*    font: 12px Verdana, Gulim, Helvetica, Arial, sans-serif; */
+    border: 1px solid #8cacbb;  
+/*    width: 98%;*/
+    color: #38393b;
+    background-color: white;
+    margin 1cm 1cm 1cm 1cm; 
+/*    white-space: normal */
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+}
+
+/* Small cosmetic fix which makes input gadgets look nicer. */
+input {
+    font: 12px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    border: 1px solid #8cacbb;  
+    color: #38393b;
+    background-color: white;
+    vertical-align: middle;
+    margin-bottom: 1px; /* IE bug fix */
+}
+
+select {
+    font: bold 12px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    border: 1px solid #8cacbb;  
+    vertical-align: middle;
+}
+
+/* Help classes */
+abbr, acronym, .explain {
+    border-bottom: 1px dotted Black;
+    color: Black;
+    background-color: transparent;
+    cursor: help;
+}
+
+pre {
+    padding: 0.5em;
+    border: 1px solid black;
+    color: Black;
+    background-color: #FFFFE1;
+    font-family: Courier;
+}
+
+input.standalone {
+    background: #DEE7EC url(linkOpaque.gif) 9px 1px no-repeat;
+    color: Black;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 1px 1px 1px 15px;
+}
+
+input.context {
+    background: White url(linkTransparent.gif) 9px 1px no-repeat;
+    color: Black;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 1px 1px 1px 15px;
+}
+
+input.destructive {
+    background: #FFCE7B url(linkTransparent.gif) 9px 1px no-repeat;
+    border: 1px solid #FFA500;  
+    color: Black;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 1px 1px 1px 15px;
+}
+
+table {
+    font: 12px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    text-align: left;
+    padding: 1em;
+    border: 1px solid #8cacbb;
+    color: #38393b;
+    background-color: white;
+    border-collapse: collapse;
+    margin: 1em 0em 1em 0em;
+}
+
+tr {
+    vertical-align: top;
+    background: transparent;
+}
+
+th {
+    background: #DEE7EC;
+    color: Black;
+    font-weight: bold;
+    white-space: nowrap;
+    border: 1px solid #8CACBB;
+    padding: 0em 0.5em 0em 0.5em;
+}
+
+td {
+    background: #DEE7EC;
+    color: Black;
+    background-color: white;
+    border: 1px solid #8cacbb;
+    padding: 0em 0.5em 0em 0.5em;
+    line-height: 125%;
+}
+
+td.number {
+    text-align: right;
+    color: blue;
+/*    font-weight: bold;*/
+    background: #DEE7EC;
+    background-color: white;
+    border: 1px solid #8cacbb;
+    padding: 0em 0.5em 0em 0.5em;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+table img {
+	vertical-align: middle;
+}
+
+/***************************************************************************/
+
+div.footnotes {
+    font: 10px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    background: #eeeeee;
+    margin: 0;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    /*border-top: 1px solid #8CACBB;*/
+}
+
+/***************************************************************************/
+
+div.footer {
+    background: #DEE7EC;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border-top: 1px solid #8CACBB;
+    bottom: 0;
+}
+

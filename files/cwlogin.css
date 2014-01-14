@@ -1,0 +1,54 @@
+/*
+ * cwlogin.css - default stylesheet for CuteWiki login page
+ *
+ * Copyright 2005 Martin Doering
+ *
+ * This file is distributed under the GPL, version 2 or at your
+ * option any later version.  See doc/license.txt for details.
+ */
+
+body {
+    background-color: #eeeeee;
+}
+
+div.login {
+    text-align: center;
+    background-color: lightgray;
+    font: 20px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    width: 50%;
+    padding: 10px; 
+    border: thin solid red;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    border: 0;
+    cellpadding: 3;
+    cellspacing: 0;
+    margin: 20px;
+    background: transparent;
+}
+
+tr {
+}
+
+td {
+    font: 16px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    color: Black;
+}
+
+input {
+    font: 12px Verdana, Gulim, Helvetica, Arial, sans-serif;
+    border: 1px solid #8cacbb;  
+    color: #38393b;
+    background-color: white;
+    margin-bottom: 1px; /* IE bug fix */
+}
+
+input.button {
+    cursor: pointer;
+    font-weight: bold;
+/*    background: White url(linkTransparent.gif) 9px 1px no-repeat;*/
+}
